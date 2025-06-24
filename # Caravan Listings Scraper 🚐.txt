@@ -1,0 +1,26 @@
+# Caravan Listings Scraper 🚐
+
+A Python-based multithreaded web scraping bot that collects detailed caravan listings from [gccaravans.com.au](https://gccaravans.com.au/caravans-for-sale/) and uploads the data to a Google Sheet.
+
+## 📌 Features
+
+- Scrolls dynamically to load all listings
+- Extracts titles, prices, images, URLs, and specifications
+- Visits each detail page to collect extended information
+- Generates a unique SKU code per listing
+- Uploads data to a timestamped worksheet in a specified Google Sheet
+- Uses multithreading for fast scraping
+
+## 🛠️ Requirements
+
+- Python 3.7+
+- Chrome browser
+- ChromeDriver
+- `requirements.txt` dependencies:
+  ```bash
+  selenium
+  pandas
+  gspread
+  oauth2client
+  google-auth
+  webdriver-manager
